@@ -10,6 +10,7 @@ Evaluation: The model's performance is evaluated on a separate test set using me
 
 Overall, the model learns to classify text as hate speech or non-hate speech based on the patterns and relationships present in the training data, as captured by the word embeddings and learned parameters of the neural network layers.
 
+<hr>
 
 ## Data Sets
 Source:- 
@@ -91,7 +92,7 @@ A graph between Training and Validation Curves
 ![](images/loss_curve.png)
 
 Model Loss Curve: Compares the Loss of each epoch 
-Accuracy shoots up in 3rd epoch.
+!Accuracy shoots up in after 5th epoch.
 
 ![](images/model_loss.png)
 
