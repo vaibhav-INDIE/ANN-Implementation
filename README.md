@@ -108,9 +108,9 @@ Here is a Intersection plot of Both Datasets visualizing new datapoints
 
 ## Example
 
-![](images/result.png)
+![](datasets/result.png)
 
-In this example there as two sentences with the following probability:
+In this example there are two sentences with the following probability:
 
             Sentence: The food was so shit and horrible I want to kill the chef.
             Probability of being hate speech: 0.9985871315002441
