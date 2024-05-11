@@ -88,7 +88,8 @@ A graph between Training and Validation Curves
 
 ![](images/loss_curve.png)
 
-Model Loss Curve
+Model Loss Curve: Compares the Loss of each epoch 
+Accuracy shoots up in 3rd epoch.
 
 ![](images/model_loss.png)
 
@@ -99,3 +100,17 @@ The overall Accuracy of model was 0.94 however when tested on a completely new d
 Here is a Intersection plot of Both Datasets visualizing new datapoints
 
 ![](images/intersection.png)
+
+An example of how this could be benificial
+
+![](images/result.png)
+
+In this example there as two sentences with the following probability:
+
+            Sentence: The food was so shit and horrible I want to kill the chef.
+            Probability of being hate speech: 0.9985871315002441
+            
+            Sentence: You are the most amazing person that I ever met.
+            Probability of being hate speech: 0.05440551042556763
+
+Hence, The model is very succesful in predicitng direct Hate speech.
