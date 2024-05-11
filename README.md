@@ -2,7 +2,7 @@
 
 Data Preprocessing: The model starts with preprocessing the text data. This involves tokenizing the text, converting words into numerical tokens, and padding sequences to make them of equal length.
 
-Embedding Layer: The model uses an embedding layer to map each word token to a dense vector representation. This layer learns the relationships between words based on their context in the training data. The embedding layer is initialized with pre-trained word embeddings like GloVe or Word2Vec.
+Embedding Layer: The model uses an embedding layer to map each word token to a dense vector representation. This layer learns the relationships between words based on their context in the training data. The embedding layer is initialized with pre-trained word embeddings from pre-trained Google embeddings.
 
 Training: The model is trained using binary cross-entropy loss and the Adam optimizer. During training, the model adjusts its parameters (embedding weights, dense layer weights) to minimize the loss function, thus improving its ability to classify hate speech.
 
