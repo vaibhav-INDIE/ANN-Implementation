@@ -39,6 +39,8 @@ Histogram of Two Label 0/1 where
     
 ![](images/label_histogram.png)
 
+<hr>
+
 ## ANN model that was Used
     from sklearn.model_selection import train_test_split
     
@@ -93,6 +95,8 @@ Accuracy shoots up in 3rd epoch.
 
 ![](images/model_loss.png)
 
+<hr>
+
 ## Results
 
 The overall Accuracy of model was 0.94 however when tested on a completely new dataset with unseen datapoints, Accuracy decreases to 0.52
@@ -101,7 +105,7 @@ Here is a Intersection plot of Both Datasets visualizing new datapoints
 
 ![](images/intersection.png)
 
-An example of how this could be benificial
+## Example
 
 ![](images/result.png)
 
