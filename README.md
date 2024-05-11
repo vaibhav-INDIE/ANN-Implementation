@@ -1,20 +1,14 @@
 # Hate Speech Regonition using Simple ANN Model
 
-1. Data Preprocessing: The model starts with preprocessing the text data. This involves tokenizing the text, converting words into numerical tokens, and padding sequences to make them of equal length.
+Data Preprocessing: The model starts with preprocessing the text data. This involves tokenizing the text, converting words into numerical tokens, and padding sequences to make them of equal length.
 
-2. Embedding Layer: The model uses an embedding layer to map each word token to a dense vector representation. This layer learns the relationships between words based on their context in the training data. The embedding layer is initialized with pre-trained word embeddings like GloVe or Word2Vec.
+Embedding Layer: The model uses an embedding layer to map each word token to a dense vector representation. This layer learns the relationships between words based on their context in the training data. The embedding layer is initialized with pre-trained word embeddings like GloVe or Word2Vec.
 
-3. Global Average Pooling: After the embedding layer, the model uses global average pooling to reduce the dimensionality of the word embeddings. This operation calculates the average of all word vectors in each sequence, resulting in a fixed-length vector for each input.
+Training: The model is trained using binary cross-entropy loss and the Adam optimizer. During training, the model adjusts its parameters (embedding weights, dense layer weights) to minimize the loss function, thus improving its ability to classify hate speech.
 
-4. Dense Layers: The pooled vectors are then passed through one or more dense layers. These layers perform non-linear transformations on the input data, allowing the model to learn complex patterns in the data.
+Evaluation: The model's performance is evaluated on a separate test set using metrics like accuracy, precision, recall, and F1-score. These metrics measure how well the model generalizes to unseen data and its ability to correctly classify hate speech.
 
-5. Output Layer: The final dense layer has a single neuron with a sigmoid activation function. This neuron outputs a probability score indicating the likelihood of the input text containing hate speech.
-
-6. Training: The model is trained using binary cross-entropy loss and the Adam optimizer. During training, the model adjusts its parameters (embedding weights, dense layer weights) to minimize the loss function, thus improving its ability to classify hate speech.
-
-6. Evaluation: The model's performance is evaluated on a separate test set using metrics like accuracy, precision, recall, and F1-score. These metrics measure how well the model generalizes to unseen data and its ability to correctly classify hate speech.
-
-7. Overall, the model learns to classify text as hate speech or non-hate speech based on the patterns and relationships present in the training data, as captured by the word embeddings and learned parameters of the neural network layers.
+Overall, the model learns to classify text as hate speech or non-hate speech based on the patterns and relationships present in the training data, as captured by the word embeddings and learned parameters of the neural network layers.
 
 
 ## Data Sets
@@ -33,17 +27,17 @@ In preprocessing :-
     
 Here is a scatter plot of all the Unique words after preprocessing of Training Dataset
 
-![](Vectors_reference_to_hate.png)
+![](images/Vectors_reference_to_hate.png)
 
 Scatter plot of Testing Dataset 
 
-![](test_plot.png)
+![](images/test_plot.png)
 
 Histogram of Two Label 0/1 where
     0 represents Non-Hate
     1 represents Hate        
     
-![](label_histogram.png)
+![](images/label_histogram.png)
 
 ## ANN model that was Used
     from sklearn.model_selection import train_test_split
@@ -92,11 +86,11 @@ Histogram of Two Label 0/1 where
 
 A graph between Training and Validation Curves
 
-![](loss_curve.png)
+![](images/loss_curve.png)
 
 Model Loss Curve
 
-![](model_loss.png)
+![](images/model_loss.png)
 
 ## Results
 
@@ -104,4 +98,4 @@ The overall Accuracy of model was 0.94 however when tested on a completely new d
 
 Here is a Intersection plot of Both Datasets visualizing new datapoints
 
-![](intersection.png)
+![](images/intersection.png)
